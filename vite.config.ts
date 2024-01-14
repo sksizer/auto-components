@@ -11,7 +11,7 @@ export default defineConfig({
             entry: resolve(__dirname, "src/index.ts"),
             name: "AutoComponentLibrary",
             // the name of the output files when the build is run
-            fileName: "auto-component",
+            fileName: "auto-components",
         },
         rollupOptions: {
             // make sure to externalize deps that shouldn't be bundled
