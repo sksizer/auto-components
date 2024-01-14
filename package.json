@@ -1,0 +1,37 @@
+{
+  "name": "@sksizer/auto-components-lib",
+  "version": "0.0.1",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/auto-components-lib.umd.cjs",
+  "module": "./dist/auto-components-lib.js",
+  "exports": {
+    ".": {
+      "import": "./dist/auto-components-lib.js",
+      "require": "./dist/auto-components-lib.umd.cjs"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "vite build && vue-tsc --emitDeclarationOnly",
+    "dev": "vite",
+    "preview": "vite preview",
+    "test": "vitest",
+    "types": "vue-tsc"
+  },
+  "dependencies": {
+    "vue": "^3.4.13"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@vitejs/plugin-vue": "^5.0.3",
+    "jsdom": "^23.2.0",
+    "typescript": "^5.3.3",
+    "vite": "^5.0.11",
+    "vitest": "^1.2.0",
+    "vue-tsc": "^1.8.27"
+  }
+}
